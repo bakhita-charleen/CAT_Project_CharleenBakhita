@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+ <div class="container">
+        <nav>
+             <ul>
+                 <li><a href="About.html">About</a></li>
+                 <li><a href="Contact.html">Contact</a></li>
+                 <li><a href="Education.html">Education</a></li>
+                 <li><a href="Events.html">Events</a></li>
+<!--                 <li><a href="Profiles.html">Profiles</a></li>-->
+
+            </ul>
+        </nav>
+<div class="header-text">
+    <h1>I'm <span style="color: deeppink">Charleen Bakhita</span> from Kenya,<br> Nairobi county.</h1>
+</div>
+    </div>
+<!--<a href="Profiles.html">Profiles</a>-->
+<!--<a href="Qualifications.html">Qualifications</a>-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="assets/images/Me1.jpeg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p style="color: thistle">My name is Charleen Bakhita Ahono Akeyo.I am a female aged seventeen years old and a citizen of Kenya by birth.I'm a student currently pursuing a Bachelors degree in Applied Computing in KCA University,Ruaraka.I enjoy doing a variety of things like listening to music, reading novels, learning new things especially about software development, shopping sprees and many more.I also enjoy participating in physical activities like Swimming,Riding on different rides like rollercoaster,Car and bike racing and more.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('events')">Events</p>
+                    <p class="tab-links" onclick="opentab('contact')">Contact</p>
+<!--                    <p class="tab-links" onclick="opentab('profiles')">Profiles</p>-->
+<!--                    <p class="tab-links" onclick="opentab('qualifications')">Qualifications</p>-->
+                </div>
+                <div class="tab-contents active-tab " id="education">
+                    <ul>
+                        <li><span>Pre-Primary school</span><br>Attended Vision Academy, later transferred to Bethel Academy.</li>
+                        <li><span>Primary Education</span><br>Studied in St. Peters' Cape View, later transferred to Rongo Success Academy.</li>
+                        <li><span>Secondary Education</span><br>Schooled in Bunyore Girls' High School</li>
+                        <li><span>University Education</span><br>Currently a student in KCA University</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="events">
+                    <ul>
+                        <li><span>API Festival</span><br></li>
+                        <li><span>Shehacks.ke</span><br></li>
+                        <li><span>bsides Nairobi</span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="contact">
+                    <ul>
+                        <li><span>Name:</span><br>Charleen Bakhita</li>
+                        <li><span>Location</span><br>Nairobi,Kenya</li>
+                        <li><span>Phone Number</span><br>0741563073</li>
+                        <a href="https://github.com/bakhita-charleen" style="text-decoration: none " >Find me on GitHub</a> <br> <br>
+                        <a href="https://www.linkedin.com/in/charleen-bakhita-30081029b/" style="text-decoration: none">My Professional Profile and connections</a>
+<!--                        <li><span>Email address</span><br><a href="mailto: bakhitacharleen@gmail.com"></a></li>-->
+                    </ul>
+                </div>
+<!--                <div class="tab-contents" id="profiles">-->
+<!--                    <ul>-->
+<!--                        <a href="https://github.com/bakhita-charleen"> My Github <br></a>-->
+<!--                        <a href=" https://www.linkedin.com/in/charleen-bakhita-30081029b/">LinkedIn <br><p>My professional profile</p></a>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--                <div class="tab-contents">-->
+<!--                    <ul>-->
+<!--                        <li><span>ecd school</span><br>name of ecd</li>-->
+<!--                        <li><span>primary</span><br>name of primary</li>-->
+<!--                        <li><span>high school</span><br>name of high school</li>-->
+<!--                        <li><span>university</span><br>name of university</li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
